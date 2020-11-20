@@ -107,7 +107,7 @@ def user_stats_generate():
         file.close()
 
 #### Taking the log file in stdin
-logfile=eval(input("Enter the log file you want to process .. "))
+logfile=str(input("Enter the log file you want to process .. "))
 
 #### Catching returned dicts
 sorted_error_dic, sorted_error_user_dic, sorted_info_dic = count_logs(logfile)
